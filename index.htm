@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="icon" type="image/x-icon" href="2.png">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&family=Ubuntu:wght@400;700&display=swap");
+        html{
+            scroll-behavior: smooth;            
+        }
+        body {
+            font-family: "Tilt Warp", 'ubuntu','sans-serif', cursive;
+          background-image: url('1.gif');
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: 100% 100%;
+          
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            background-color: rgba(218, 239, 239, 0.697);
+            backdrop-filter: blur(1px);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin: auto;
+            margin-top: 3%;
+            max-width: 1100px;
+            height: auto;
+        }
+        .todo{
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+        }
+        .todo__value{
+            background: transparent;
+            border: none;
+            outline: none;
+            font-family: 'Ubuntu';
+            font-size: 1em;
+            font-weight: bold;
+            flex-grow: 1;
+        }
+        .todo:has(.todo__checkbox:checked) {
+	    color: #555555;
+	    background-color: rgba(84, 182, 104, 0.4);
+	    text-decoration: line-through;
+	    order: 1;
+        }
+        #header{
+            padding: 1rem;
+            text-align: center;
+            color: #090303;
+            ;
+        }
+    </style>
+</head>
+<body>
+    <table border="0" width="100%" height="80px">
+        <tbody><tr>
+            <th> <font face="Tahoma" style="font-size: 30px;"> Sensei. </font> </th>
+            <th> <a href="index.htm"><font face="Tahoma" style="font-size: 18px;">Home</font> </a> </th>
+            <th><pre><a href="https://suhas-portfolio-weld.vercel.app/about.html"><font face="Tahoma" style="font-size: 18px;"> About</font></a></pre></th>
+            <th><pre><a href="https://suhas-portfolio-weld.vercel.app/projects.htm"><font face="Tahoma" style="font-size: 18px;">Projects</font></a></pre></th>
+            <th><pre><a href="https://www.linkedin.com/in/suhasghosal/"><font face="Tahoma" style="font-size: 18px;"><button>Reach Me</button></font></a></th>
+            </tr></pre>
+    </tbody></table>
+    <div id="header">
+        <h1>My ToDo List</h1>
+    </div>
+    <div class="container">
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)" value="Enter task">
+			<input class="todo__checkbox" type="checkbox">
+        </div>
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)" value="1. ">
+			<input class="todo__checkbox" type="checkbox">
+        </div>
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)" value="2. ">
+			<input class="todo__checkbox" type="checkbox">
+        </div>
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)" value="3. ">
+			<input class="todo__checkbox" type="checkbox">
+        </div>
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)" value="4. ">
+			<input class="todo__checkbox" type="checkbox">
+        </div>
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)" value="5. ">
+			<input class="todo__checkbox" type="checkbox">
+        </div>
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)" value="6. ">
+			<input class="todo__checkbox" type="checkbox">
+        </div>
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)" value="7. ">
+			<input class="todo__checkbox" type="checkbox">
+        </div>
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)" value="8. ">
+			<input class="todo__checkbox" type="checkbox">
+        </div>
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)" value="9. ">
+			<input class="todo__checkbox" type="checkbox">
+        </div>
+        <div class="todo">
+            <input class="todo__value" type="text" placeholder="(empty)" value="10. ">
+			<input class="todo__checkbox" type="checkbox">
+        </div>
+    </div>
+    
+</body>
+</html>
